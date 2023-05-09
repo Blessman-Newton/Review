@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e2e8f0;
+}
+
+.container #title {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.container #description {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #03012c;
+  color: #fff;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.container form label {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.container form input {
+  padding: 0.5em 2rem;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#name,
+#email,
+#number {
+  width: 50%;
+}
+
+.container select {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container form button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.5em;
+  margin-top: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container form button:hover {
+  background-color: #43a047;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  #name,
+  #email,
+  #number {
+    width: 40%;
+  }
+
+  .container form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #name,
+  #email,
+  #number {
+    width: 30%;
+  }
+}

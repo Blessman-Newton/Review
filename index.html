@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Survey Form</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="col-md-12">
+			<h1 id="title">Survey Form</h1>
+			<p id="description">Please provide us a short feedback about your experience with Microverse</p>
+		</div>
+		<div class="col-md-12">
+			<form id="survey-form">
+				<div>
+					<label id="name-label" for="name">Name</label>
+					<br />
+					<input type="text" id="name" name="name" placeholder="Enter your name" value="" required>
+				</div>
+				<div>
+					<label id="email-label" for="email">Email</label>
+					<br />
+					<input type="email" value="" id="email" name="email" placeholder="Enter your email" required>
+				</div>
+				<div>
+					<label id="number-label" for="number">Age</label>
+					<br />
+					<input type="number" value="" id="number" name="number" min="10" max="20"
+						placeholder="Enter your age" required>
+				</div>
+				<div>
+					<label for="dropdown">Which option best describes your current role?</label>
+					<br />
+					<select id="dropdown" name="dropdown">
+						<option value="student">Student</option>
+						<option value="job">Full Time Job</option>
+						<option value="learner">Full Time Learner</option>
+						<option value="prefer">Prefer not to say</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<div class="radio-container">
+					<p>What is do you find appealing at Microverse?</p>
+					<input type="radio" id="radio1" name="radio" value="challenges">
+					<label for="radio1">Challenges</label>
+					<br />
+					<input type="radio" id="radio2" name="radio" value="projects">
+					<label for="radio2">Projects</label>
+					<br />
+					<input type="radio" id="radio3" name="radio" value="community">
+					<label for="radio3">Community</label>
+					<br />
+					<input type="radio" id="radio4" name="radio" value="support">
+					<label for="radio4">Support</label>
+				</div>
+				<div>
+					<p>Would you recommend Microverse to a friend?</p>
+					<input type="checkbox" id="checkbox1" name="checkbox" value="definitely">
+					<label for="checkbox1">Definitely</label>
+					<br />
+					<input type="checkbox" id="checkbox2" name="checkbox" value="maybe">
+					<label for="checkbox2">Maybe</label>
+					<br />
+					<input type="checkbox" id="checkbox3" name="checkbox" value="not-sure">
+					<label for="checkbox3">Not sure</label>
+				</div>
+				<div>
+					<textarea id="textarea" class="additional-comments"></textarea>
+				</div>
+				<div>
+					<button type="submit" id="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
